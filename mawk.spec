@@ -7,7 +7,6 @@ Group:		Development/Other
 URL:		http://www.math.fu-berlin.de/~leitner/mawk/
 Source:		mawk1.3.3.tar.bz2
 Patch:		mawk1.2.2-prefix.patch
-BuildRoot:	%_tmppath/%name-%version-root
 
 %description
 Mawk is a version of the awk programming language.  Awk interprets a 
