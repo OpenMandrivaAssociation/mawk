@@ -4,6 +4,7 @@ Version:	1.3.3
 Release: 	%mkrel 8
 License:	GPL
 Group:		Development/Other
+BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 URL:		http://www.math.fu-berlin.de/~leitner/mawk/
 Source:		mawk1.3.3.tar.bz2
 Patch:		mawk1.2.2-prefix.patch
