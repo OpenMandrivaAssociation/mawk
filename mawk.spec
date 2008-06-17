@@ -1,7 +1,7 @@
 Summary:	An interpreter for the awk programming language
 Name:		mawk
 Version:	1.3.3
-Release: 	%mkrel 8
+Release: 	%mkrel 9
 License:	GPL
 Group:		Development/Other
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
