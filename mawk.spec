@@ -1,7 +1,7 @@
 Summary:	An interpreter for the awk programming language
 Name:		mawk
 Version:	1.3.3
-Release: 	%mkrel 10
+Release: 	%mkrel 11
 License:	GPL
 Group:		Development/Other
 URL:		http://www.math.fu-berlin.de/~leitner/mawk/
