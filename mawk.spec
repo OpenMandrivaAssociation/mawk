@@ -1,7 +1,7 @@
 Summary:	An interpreter for the awk programming language
 Name:		mawk
 Version:	1.3.3
-Release: 	%mkrel 15
+Release: 	%mkrel 16
 License:	GPLv2+
 Group:		Development/Other
 URL:		http://www.math.fu-berlin.de/~leitner/mawk/
@@ -35,12 +35,12 @@ OPT_FLAGS=`echo "$RPM_OPT_FLAGS" | sed -e "s/-ffast-math//g"`
 make CFLAGS="$OPT_FLAGS"
 
 %install
-rm -rf %{buildroot}
-mkdir -p %{buildroot}{%{_bindir},%{_mandir}/man1}
+rm -rf $RPM_BUILD_ROOT
+mkdir -p $RPM_BUILD_ROOT{%{_bindir},%{_mandir}/man1}
 %makeinstall
 
 %clean
-rm -rf %{buildroot}
+rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(-,root,root)
@@ -48,4 +48,50 @@ rm -rf %{buildroot}
 %{_mandir}/man1/*
 %doc ACKNOWLEDGMENT CHANGES INSTALL README
 
+
+
+
+%changelog
+* Wed May 04 2011 Oden Eriksson <oeriksson@mandriva.com> 1.3.3-15mdv2011.0
++ Revision: 666394
+- mass rebuild
+
+* Fri Dec 03 2010 Oden Eriksson <oeriksson@mandriva.com> 1.3.3-14mdv2011.0
++ Revision: 606632
+- rebuild
+
+* Sun Mar 14 2010 Oden Eriksson <oeriksson@mandriva.com> 1.3.3-13mdv2010.1
++ Revision: 519038
+- rebuild
+
+  + Sandro Cazzaniga <kharec@mandriva.org>
+    - fix licence
+
+* Thu Sep 03 2009 Christophe Fergeau <cfergeau@mandriva.com> 1.3.3-11mdv2010.0
++ Revision: 426079
+- rebuild
+
+* Sun Dec 21 2008 Oden Eriksson <oeriksson@mandriva.com> 1.3.3-10mdv2009.1
++ Revision: 317075
+- use %%ldflags (P1)
+
+* Tue Jun 17 2008 Thierry Vignaud <tv@mandriva.org> 1.3.3-9mdv2009.0
++ Revision: 223225
+- rebuild
+- fix no-buildroot-tag
+
+* Mon Dec 17 2007 Thierry Vignaud <tv@mandriva.org> 1.3.3-8mdv2008.1
++ Revision: 129783
+- kill re-definition of %%buildroot on Pixel's request
+
+
+* Wed Mar 07 2007 Oden Eriksson <oeriksson@mandriva.com> 1.3.3-8mdv2007.0
++ Revision: 134436
+- Import mawk
+
+* Wed Mar 07 2007 Oden Eriksson <oeriksson@mandriva.com> 1.3.3-8mdv2007.1
+- use the %%mkrel macro
+
+* Fri Oct 14 2005 Pixel <pixel@mandriva.com> 1.3.3-7mdk
+- rebuild
 
