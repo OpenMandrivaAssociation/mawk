@@ -1,4 +1,4 @@
-%define snap 20160905
+%define snap 20161107
 
 Summary:	An interpreter for the awk programming language
 Name:		mawk
@@ -31,6 +31,6 @@ mkdir -p %{buildroot}{%{_bindir},%{_mandir}/man1}
 %makeinstall_std
 
 %files
-%doc ACKNOWLEDGMENT CHANGES INSTALL README
+%doc ACKNOWLEDGMENT CHANGES README
 %{_bindir}/mawk
 %{_mandir}/man1/*
