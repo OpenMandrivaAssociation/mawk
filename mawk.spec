@@ -8,6 +8,10 @@ License:	GPLv2+
 Group:		Development/Other
 Url:		http://www.math.fu-berlin.de/~leitner/mawk/
 Source0:	ftp://invisible-island.net/pub/mawk/%{name}-%{version}-%{snap}.tgz
+BuildRequires:	byacc
+BuildRequires:	bison
+BuildRequires:	groff-base
+BuildRequires:	ctags
 
 %description
 Mawk is a version of the awk programming language.  Awk interprets a 
