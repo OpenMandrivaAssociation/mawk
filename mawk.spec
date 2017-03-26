@@ -1,4 +1,4 @@
-%define snap 20161107
+%define snap 20161120
 
 Summary:	An interpreter for the awk programming language
 Name:		mawk
