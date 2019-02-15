@@ -6,7 +6,7 @@ Version:	1.3.4
 Release:	0.%{snap}.1
 License:	GPLv2+
 Group:		Development/Other
-Url:		http://www.math.fu-berlin.de/~leitner/mawk/
+Url:		https://invisible-island.net/mawk/
 Source0:	ftp://invisible-island.net/pub/mawk/%{name}-%{version}-%{snap}.tgz
 BuildRequires:	byacc
 BuildRequires:	bison
