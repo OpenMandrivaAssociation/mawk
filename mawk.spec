@@ -1,4 +1,4 @@
-%define snap 20171017
+%define snap 20190203
 
 Summary:	An interpreter for the awk programming language
 Name:		mawk
@@ -23,16 +23,16 @@ conforms to the POSIX 1003.2 (draft 11.3) definition of awk.
 You should install mawk if you use awk.
 
 %prep
-%setup -qn %{name}-%{version}-%{snap}
+%autosetup -n %{name}-%{version}-%{snap} -p1
 chmod -R a+r .
 
 %build
 %configure
-%make
+%make_build
 
 %install
 mkdir -p %{buildroot}{%{_bindir},%{_mandir}/man1}
-%makeinstall_std
+%make_install
 
 %files
 %doc ACKNOWLEDGMENT CHANGES README
