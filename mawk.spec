@@ -1,4 +1,4 @@
-%define snap 20200106
+%define snap 20200120
 
 Summary:	An interpreter for the awk programming language
 Name:		mawk
@@ -37,4 +37,4 @@ mkdir -p %{buildroot}{%{_bindir},%{_mandir}/man1}
 %files
 %doc ACKNOWLEDGMENT CHANGES README
 %{_bindir}/mawk
-%{_mandir}/man1/*
+%doc %{_mandir}/man1/*
