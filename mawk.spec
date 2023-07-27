@@ -1,13 +1,11 @@
-%define snap 20200120
-
 Summary:	An interpreter for the awk programming language
 Name:		mawk
-Version:	1.3.4
-Release:	0.%{snap}.1
+Version:	1.3.4_20230525
+Release:	1
 License:	GPLv2+
 Group:		Development/Other
 Url:		https://invisible-island.net/mawk/
-Source0:	ftp://invisible-island.net/pub/mawk/%{name}-%{version}-%{snap}.tgz
+Source0:	https://invisible-island.net/archives/mawk/mawk-%(echo %{version}|sed -e 's,_,-,g').tgz
 BuildRequires:	byacc
 BuildRequires:	bison
 BuildRequires:	groff-base
@@ -23,7 +21,7 @@ conforms to the POSIX 1003.2 (draft 11.3) definition of awk.
 You should install mawk if you use awk.
 
 %prep
-%autosetup -n %{name}-%{version}-%{snap} -p1
+%autosetup -n %{name}-%(echo %{version}|sed -e 's,_,-,g') -p1
 chmod -R a+r .
 
 %build
