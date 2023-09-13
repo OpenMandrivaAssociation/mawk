@@ -1,6 +1,6 @@
 Summary:	An interpreter for the awk programming language
 Name:		mawk
-Version:	1.3.4_20230525
+Version:	1.3.4_20230808
 Release:	1
 License:	GPLv2+
 Group:		Development/Other
@@ -36,3 +36,4 @@ mkdir -p %{buildroot}{%{_bindir},%{_mandir}/man1}
 %doc ACKNOWLEDGMENT CHANGES README
 %{_bindir}/mawk
 %doc %{_mandir}/man1/*
+%doc %{_mandir}/man7/*
