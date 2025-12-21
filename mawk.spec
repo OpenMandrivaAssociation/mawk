@@ -6,6 +6,11 @@ License:	GPLv2+
 Group:		Development/Other
 Url:		https://invisible-island.net/mawk/
 Source0:	https://invisible-island.net/archives/mawk/mawk-%(echo %{version}|sed -e 's,_,-,g').tgz
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires:	byacc
 BuildRequires:	bison
 BuildRequires:	groff-base
